@@ -1,0 +1,66 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__task {
+    display: inline-block;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: .5rem 0;
+    text-decoration: none;
+    color: #2196F3;
+}
+
+.app__task:hover {
+    color: #1976D2;
+}
+
+.app__name {
+    font-size: 2rem;
+    text-align: center;
+    margin: .5rem 0;
+}
+
+.app__author {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: .5rem;
+    color: #9E9E9E;
+}
+
+.app__counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__counter-button {
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.app__counter-button--decrement {
+    background: #f44336;
+}
+
+.app__counter-button--increment {
+    background: #4CAF50;
+}
+
+.app__counter-value {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+}
