@@ -19,6 +19,11 @@ jobs:
         node-version: [12.x]
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
       - name: Set Directory to Deploy
         run: echo ::set-env name=DIRECTORY_TO_DEPLOY::$((test -d build && echo build) || echo dist)
 
